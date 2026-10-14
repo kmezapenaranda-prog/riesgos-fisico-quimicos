@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101923">
+  <meta name="description" content="Folleto digital interactivo de la Universidad Francisco de Paula Santander sobre riesgos físico-químicos y prevención de incendios en minería.">
+  <title>Riesgos físico-químicos · Ingeniería de Minas · UFPS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="icon-flame" viewBox="0 0 24 24"><path d="M12 22c4.5 0 8-3 8-7 0-3.8-2.8-6.4-5.5-8.8.4 3-1.5 4.3-2.5 5.1C12.4 6.8 9.5 3.5 7.8 2c.5 4.7-3.8 7.2-3.8 13 0 4 3.5 7 8 7Z"/><path d="M12 22c-2.1 0-3.7-1.5-3.7-3.5 0-1.8 1.7-3.5 3-4.7.1 1.6 2.3 2.6 2.3 4.2 0-1.5.7-2.5 1.3-3 1.5 1.6 2.8 2.7 2.8 4.1 0 2-1.6 3.4-3.7 3.4Z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5.5-3.4 8.6-9 10-5.6-1.4-9-4.5-9-10V6l9-4Z"/><path d="m8 12 2.7 2.7L16 9.5"/></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24"><path d="m12 3 10 18H2L12 3Z"/><path d="M12 9v5m0 3h.01"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 4.5C4 3.7 4.7 3 5.5 3H20v16H5.5A1.5 1.5 0 0 0 4 20.5V4.5Z"/><path d="M4 20.5C4 21.3 4.7 22 5.5 22H20M8 8h8M8 12h6"/></symbol>
+    <symbol id="icon-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2-5.6M3 4v5h5"/></symbol>
+    <symbol id="icon-wind" viewBox="0 0 24 24"><path d="M3 8h12a3 3 0 1 0-3-3M2 12h18a2 2 0 1 1-2 2M3 16h11a3 3 0 1 1-3 3"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m13 2-2 7-7 2 7 2 2 7 2-7 7-2-7-2-2-7Z"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  </svg>
+
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio del folleto">
+        <span class="brand-mark"><img src="assets/image1.png" alt="Logo del programa Ingeniería de Minas UFPS" width="201" height="161"></span>
+        <span class="brand-copy"><strong>MINERÍA <span>SEGURA</span></strong><small>Seguridad industrial · UFPS</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#conceptos">Conceptos</a>
+        <a href="#factores">Factores</a>
+        <a href="#prevencion">Prevención</a>
+        <a href="#emergencia">Emergencias</a>
+        <a href="#repaso" class="nav-quiz">Pon a prueba lo aprendido <svg class="icon"><use href="#icon-arrow"/></svg></a>
+      </nav>
+      <button class="mobile-menu" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><svg class="icon"><use href="#icon-menu"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow light"><span class="red-dot"></span> SEGURIDAD INDUSTRIAL Y DE MINAS <span class="eyebrow-line"></span> 2026</div>
+          <h1 id="hero-title">Factores productores de <em>riesgos físico-químicos.</em></h1>
+          <p class="hero-description">Prevención de incendios en minería. Aprende a identificar los factores de riesgo, conocer las medidas de control y actuar ante una emergencia.</p>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="#conceptos">Explorar contenidos <svg class="icon"><use href="#icon-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#emergencia"><svg class="icon"><use href="#icon-alert"/></svg> ¿Qué hacer en un incendio?</a>
+          </div>
+          <div class="hero-credit"><span class="hero-credit-line"></span><span>Universidad Francisco de Paula Santander<br><strong>Programa de Ingeniería de Minas · Cúcuta</strong><br>Elaborado por: Jaider Villamizar (1181757) y Kevin Steven Meza Peñaranda (1181883)</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración conceptual de una galería minera con señales de prevención">
+          <div class="mine-panel">
+            <span class="mine-panel-caption">SEGURIDAD EN MINERÍA <span>/// 001</span></span>
+            <svg class="mine-svg" viewBox="0 0 580 530" role="img" aria-label="Galería minera conceptual, sin valores reales de sensores">
+              <defs>
+                <linearGradient id="mine-tunnel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#283542"/><stop offset="1" stop-color="#111c27"/></linearGradient>
+                <linearGradient id="mine-floor" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#263343"/><stop offset="1" stop-color="#09121c"/></linearGradient>
+                <radialGradient id="mine-glow"><stop offset="0" stop-color="#d84335" stop-opacity=".24"/><stop offset="1" stop-color="#d84335" stop-opacity="0"/></radialGradient>
+                <pattern id="mine-dots" width="19" height="19" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="#546374" opacity=".24"/></pattern>
+              </defs>
+              <rect width="580" height="530" fill="url(#mine-dots)" opacity=".7"/>
+              <path d="M55 476V244C55 116 155 55 291 55s234 61 234 189v232" fill="none" stroke="#354451" stroke-width="35"/>
+              <path d="M65 476V244C65 122 158 67 291 67s224 55 224 177v232Z" fill="url(#mine-tunnel)" stroke="#65717a" stroke-width="2"/>
+              <path d="M140 476V256c0-85 59-130 151-130s151 45 151 130v220" fill="none" stroke="#3b4856" stroke-width="3" stroke-dasharray="8 12"/>
+              <path d="M215 476V265c0-39 27-69 76-69s76 30 76 69v211" fill="#14232f" stroke="#73808a" stroke-width="2"/>
+              <path d="M0 485 215 373h152l213 112v45H0Z" fill="url(#mine-floor)"/>
+              <path d="M291 369 172 530M291 369 408 530" stroke="#82909d" stroke-width="3" opacity=".38"/>
+              <path d="M291 369 270 530M291 369 311 530" stroke="#82909d" stroke-width="2" opacity=".16"/>
+              <g stroke="#7e8b97" opacity=".55"><path d="M184 449h212M143 493h295M234 409h113"/></g>
+              <ellipse cx="290" cy="255" rx="200" ry="200" fill="url(#mine-glow)"/>
+              <g class="mine-sensor" transform="translate(293 270)">
+                <circle r="63" fill="#e84737" opacity=".08"/><circle r="45" fill="#e84737" opacity=".1"/><circle r="30" fill="#e84737" opacity=".15"/>
+                <circle r="17" fill="#e84737"/><path d="M0-9v11M0 8v1" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+              </g>
+              <path d="M314 254 404 190h62" stroke="#ed7a6c" stroke-width="1.5" stroke-dasharray="5 6" fill="none"/>
+              <g transform="translate(398 145)"><rect width="145" height="45" rx="9" fill="#faf7f4"/><circle cx="20" cy="22" r="5" fill="#c51b27"/><text x="35" y="20" fill="#26313f" font-family="Arial,sans-serif" font-size="11" font-weight="bold">FACTOR DE</text><text x="35" y="33" fill="#26313f" font-family="Arial,sans-serif" font-size="11" font-weight="bold">RIESGO</text></g>
+              <g opacity=".82"><path d="M76 74h52M76 74v52M504 74h-52M504 74v52M76 437h52M76 437v-52M504 437h-52M504 437v-52" stroke="#78909c" stroke-width="2"/></g>
+              <g transform="translate(64 175)"><rect width="125" height="43" rx="8" fill="#17232d" stroke="#576774"/><text x="15" y="18" fill="#d7e0e5" font-size="11" font-family="Arial,sans-serif" font-weight="bold">CH₄ · METANO</text><text x="15" y="33" fill="#99a9b6" font-size="9" font-family="Arial,sans-serif">RIESGO QUÍMICO</text></g>
+            </svg>
+            <div class="mine-panel-bottom"><span><span class="status-dot"></span> PREVENIR · IDENTIFICAR · ACTUAR</span><span>FIG. 01</span></div>
+          </div>
+          <div class="hero-sticker"><svg class="icon"><use href="#icon-shield"/></svg><span><strong>La seguridad empieza</strong><br>con la prevención</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <div class="stats-strip"><div class="container stats-grid">
+      <div class="stat"><strong>03</strong><span>Elementos<br>del fuego</span></div>
+      <div class="stat"><strong>02</strong><span>Tipos de factores<br>productores de riesgo</span></div>
+      <div class="stat"><strong>09</strong><span>Medidas de<br>prevención y control</span></div>
+      <div class="stat"><strong>07</strong><span>Pasos ante<br>un incendio</span></div>
+    </div></div>
+
+    <section class="section section-concepts" id="conceptos" aria-labelledby="concept-title">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="red-dot"></span> 01 / CONCEPTOS FUNDAMENTALES</div><h2 id="concept-title">Entender el riesgo es el <span>primer paso.</span></h2></div><p>Conoce qué origina un incendio y qué condiciones deben coincidir para que se produzca.</p></div>
+        <div class="concept-grid">
+          <article class="intro-card">
+            <div class="large-icon"><svg class="icon"><use href="#icon-alert"/></svg></div>
+            <h3>¿Qué es el riesgo físico-químico?</h3>
+            <p>Posibilidad de que una sustancia, energía o condiciones del lugar de trabajo causen un <strong>incendio, explosión o una intoxicación.</strong></p>
+            <div class="inline-note"><span class="mini-rule"></span> En minería, identificar estos riesgos permite anticipar situaciones peligrosas.</div>
+          </article>
+          <article class="triangle-card" aria-labelledby="triangle-title">
+            <div class="card-top"><div><div class="micro-label">CONCEPTO INTERACTIVO</div><h3 id="triangle-title">El triángulo del fuego</h3></div><span class="card-counter">01 / 03</span></div>
+            <p class="triangle-helper">Selecciona cada elemento para conocer su función.</p>
+            <div class="triangle-main">
+              <div class="triangle-graphic" role="group" aria-label="Elementos del triángulo del fuego">
+                <svg viewBox="0 0 340 260" aria-hidden="true" class="tri-svg">
+                  <path d="M170 14 321 240H19Z" fill="#fff9f7" stroke="#ddd7d4" stroke-width="2"/>
+                  <path d="M170 27 32 233" stroke="#d88e30" stroke-width="19" stroke-linecap="round"/>
+                  <path d="M170 27 308 233" stroke="#ce2b33" stroke-width="19" stroke-linecap="round"/>
+                  <path d="M32 233H308" stroke="#2a6c99" stroke-width="19" stroke-linecap="round"/>
+                  <path d="M170 99c-6 21 12 26 5 44 19-17 24-30 20-42 22 20 35 45 35 70 0 34-27 54-60 54s-61-21-61-54c0-28 19-52 39-76-2 25 8 32 22 43-5-12-2-22 0-39Z" fill="#e54a31"/>
+                  <path d="M167 155c-2 12 5 15 5 22 9-8 9-13 9-20 11 11 15 21 15 32 0 14-12 25-27 25s-28-10-28-25c0-16 9-29 21-42-1 14 3 18 5 22Z" fill="#ffbb49"/>
+                </svg>
+                <button class="triangle-point active" data-triangle="combustible" style="--px:49%;--py:3%" aria-pressed="true">Combustible</button>
+                <button class="triangle-point" data-triangle="comburente" style="--px:3%;--py:92%" aria-pressed="false">Comburente</button>
+                <button class="triangle-point" data-triangle="calor" style="--px:97%;--py:92%" aria-pressed="false">Calor</button>
+              </div>
+              <div class="triangle-info" id="triangle-info" aria-live="polite"><span class="small-pill">01 · COMBUSTIBLE</span><h4>Carbón, madera y metano.</h4><p>Materiales que pueden arder y alimentar el fuego.</p></div>
+            </div>
+            <div class="original-diagram"><img src="assets/image4.png" width="195" height="170" alt="Triángulo del fuego: combustible, comburente y calor"><p><strong>Dato clave</strong><br>Si se elimina uno de los tres elementos, el fuego no se produce o se apaga.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-factors" id="factores" aria-labelledby="factor-title">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="red-dot"></span> 02 / IDENTIFICACIÓN</div><h2 id="factor-title">¿Qué factores producen <span>el riesgo?</span></h2></div><p>Identifica los factores físicos y químicos que pueden originar condiciones peligrosas en una mina.</p></div>
+        <div class="factors-grid">
+          <article class="factor-card physical"><div class="factor-head"><span class="factor-icon"><svg class="icon"><use href="#icon-spark"/></svg></span><div><span class="micro-label">CATEGORÍA 01</span><h3>Factores físicos</h3></div><span class="factor-count">04</span></div><ul class="risk-list"><li>Fricción y recalentamiento de equipos y bandas.</li><li>Chispas por herramientas o maquinaria.</li><li>Temperatura alta y mala ventilación.</li><li>Instalaciones eléctricas sin mantenimiento.</li></ul><div class="factor-footer">Condiciones y fuentes de energía</div></article>
+          <article class="factor-card chemical"><div class="factor-head"><span class="factor-icon"><svg class="icon"><use href="#icon-flame"/></svg></span><div><span class="micro-label">CATEGORÍA 02</span><h3>Factores químicos</h3></div><span class="factor-count">05</span></div><ul class="risk-list"><li><strong>Metano (CH₄):</strong> inflamable y explosivo.</li><li><strong>Monóxido de carbono (CO):</strong> tóxico, se genera en la combustión incompleta.</li><li>Polvo de carbón en suspensión.</li><li>Combustión espontánea del carbón por oxidación.</li><li>Aceites, grasas y combustibles almacenados.</li></ul><div class="factor-footer">Sustancias y materiales peligrosos</div></article>
+        </div>
+        <div class="highlight-banner"><div class="highlight-icon"><svg class="icon"><use href="#icon-shield"/></svg></div><p><strong>Recuerda:</strong> Prevenir es más seguro y más barato que apagar un incendio bajo tierra.</p><a href="#prevencion">Ver medidas de prevención <svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="section section-prevention" id="prevencion" aria-labelledby="prevention-title">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="red-dot"></span> 03 / PREVENCIÓN Y CONTROL</div><h2 id="prevention-title">La prevención <span>salva vidas.</span></h2></div><p>Explora las nueve medidas de prevención y control. Marca las que hayas estudiado y consulta tu progreso.</p></div>
+        <div class="prevention-toolbar"><div class="filter-tabs" role="group" aria-label="Filtrar medidas de prevención"><button class="filter-btn active" data-filter="todos" aria-pressed="true">Todas <span>9</span></button><button class="filter-btn" data-filter="ambiente" aria-pressed="false">Ambiente</button><button class="filter-btn" data-filter="equipos" aria-pressed="false">Equipos</button><button class="filter-btn" data-filter="procedimientos" aria-pressed="false">Procedimientos</button><button class="filter-btn" data-filter="respuesta" aria-pressed="false">Respuesta</button></div><div class="review-progress"><span id="review-progress-label">0 de 9 revisadas</span><div class="progress-track" aria-hidden="true"><div class="progress-fill" id="review-progress-fill"></div></div></div></div>
+        <div class="measure-grid" id="measure-grid">
+          <article class="measure-card" data-category="ambiente" data-id="ventilar"><div class="measure-top"><span class="measure-no">01</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="ventilar" aria-label="Marcar Ventilar como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Ventilar</h3><p>Ventilación adecuada y medición continua de gases.</p><span class="category-label">AMBIENTE</span></article>
+          <article class="measure-card" data-category="equipos" data-id="monitorear"><div class="measure-top"><span class="measure-no">02</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="monitorear" aria-label="Marcar Monitorear como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Monitorear</h3><p>Detectores de metano y CO calibrados.</p><span class="category-label">EQUIPOS</span></article>
+          <article class="measure-card" data-category="equipos" data-id="mantener"><div class="measure-top"><span class="measure-no">03</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="mantener" aria-label="Marcar Mantener como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Mantener</h3><p>Revisión periódica de equipos eléctricos y bandas.</p><span class="category-label">EQUIPOS</span></article>
+          <article class="measure-card" data-category="ambiente" data-id="polvo"><div class="measure-top"><span class="measure-no">04</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="polvo" aria-label="Marcar Controlar el polvo como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Controlar el polvo</h3><p>Humedecer o inertizar el polvo de carbón.</p><span class="category-label">AMBIENTE</span></article>
+          <article class="measure-card" data-category="procedimientos" data-id="autorizar"><div class="measure-top"><span class="measure-no">05</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="autorizar" aria-label="Marcar Autorizar como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Autorizar</h3><p>Permisos de trabajo para soldadura y trabajo en caliente.</p><span class="category-label">PROCEDIMIENTOS</span></article>
+          <article class="measure-card" data-category="equipos" data-id="equipar"><div class="measure-top"><span class="measure-no">06</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="equipar" aria-label="Marcar Equipar como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Equipar</h3><p>Extintores señalizados, vigentes y de fácil acceso.</p><span class="category-label">EQUIPOS</span></article>
+          <article class="measure-card" data-category="respuesta" data-id="evacuacion"><div class="measure-top"><span class="measure-no">07</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="evacuacion" aria-label="Marcar Preparar la evacuación como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Preparar la evacuación</h3><p>Rutas de escape, cámaras de refugio y autorrescatadores.</p><span class="category-label">RESPUESTA</span></article>
+          <article class="measure-card" data-category="procedimientos" data-id="entrenar"><div class="measure-top"><span class="measure-no">08</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="entrenar" aria-label="Marcar Entrenar como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Entrenar</h3><p>Capacitación y simulacros periódicos.</p><span class="category-label">PROCEDIMIENTOS</span></article>
+          <article class="measure-card" data-category="respuesta" data-id="proteger"><div class="measure-top"><span class="measure-no">09</span><label class="review-control" title="Marcar contenido revisado"><input type="checkbox" data-review="proteger" aria-label="Marcar Proteger como revisado"><span class="review-check"><svg class="icon"><use href="#icon-check"/></svg></span></label></div><h3>Proteger</h3><p>Casco, ropa resistente al fuego, botas y lámpara.</p><span class="category-label">RESPUESTA</span></article>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section section-emergency" id="emergencia" aria-labelledby="emergency-title">
+      <div class="container">
+        <div class="emergency-heading"><div class="eyebrow light"><span class="red-dot"></span> 04 / PROTOCOLO DE EMERGENCIA</div><h2 id="emergency-title">¿Qué hacer en caso <em>de incendio?</em></h2><p>Conoce los siete pasos de actuación ante incendios. Selecciona cada paso para verlo en detalle.</p></div>
+        <div class="emergency-layout">
+          <div class="steps-panel" id="steps-panel">
+            <button class="emergency-step active" data-step="0" aria-expanded="true"><span class="step-number">01</span><span class="step-title">Mantenga la calma y active la alarma.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+            <button class="emergency-step" data-step="1" aria-expanded="false"><span class="step-number">02</span><span class="step-title">Avise de inmediato al supervisor o jefe de turno.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+            <button class="emergency-step" data-step="2" aria-expanded="false"><span class="step-number">03</span><span class="step-title">Si el fuego es pequeño y sabe usar el extintor, intente controlarlo.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+            <button class="emergency-step" data-step="3" aria-expanded="false"><span class="step-number">04</span><span class="step-title">Si no es controlable, evacúe por la ruta de escape señalizada.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+            <button class="emergency-step" data-step="4" aria-expanded="false"><span class="step-number">05</span><span class="step-title">Use el autorrescatador y avance agachado si hay humo.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+            <button class="emergency-step" data-step="5" aria-expanded="false"><span class="step-number">06</span><span class="step-title">No regrese por objetos personales.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+            <button class="emergency-step" data-step="6" aria-expanded="false"><span class="step-number">07</span><span class="step-title">Diríjase al punto de reunión o cámara de refugio y espere instrucciones.</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+          </div>
+          <aside class="emergency-detail" id="step-detail" aria-live="polite"><div class="detail-watermark" id="detail-watermark">01</div><div class="detail-icon"><svg class="icon"><use href="#icon-alert"/></svg></div><span class="micro-label">PASO 01 DE 07</span><h3>Mantenga la calma y active la alarma.</h3><p>Mantenga la calma y active la alarma para alertar a las personas cercanas.</p><div class="step-actions"><button type="button" id="prev-step" disabled aria-label="Paso anterior">Anterior</button><button type="button" id="next-step">Siguiente paso <svg class="icon"><use href="#icon-arrow"/></svg></button></div></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-extinguishers" id="extintores" aria-labelledby="exting-title">
+      <div class="container extinguishers-grid">
+        <div><div class="eyebrow"><span class="red-dot"></span> 05 / CLASES DE FUEGO</div><h2 id="exting-title">Identifica las <span>clases de fuego.</span></h2><p class="section-desc">Selecciona una letra para conocer las clases de fuego según el material involucrado.</p><div class="fire-class-controls" role="group" aria-label="Seleccionar clase de fuego"><button class="fire-class-btn active" data-fire="A" aria-pressed="true">A</button><button class="fire-class-btn" data-fire="B" aria-pressed="false">B</button><button class="fire-class-btn" data-fire="C" aria-pressed="false">C</button><button class="fire-class-btn" data-fire="D" aria-pressed="false">D</button><button class="fire-class-btn" data-fire="K" aria-pressed="false">K</button></div><div class="fire-class-detail" id="fire-class-detail" aria-live="polite"><span class="micro-label">CLASE A</span><h3>Sólidos comunes</h3><p>Carbón, madera y papel.</p></div></div>
+        <div class="extinguisher-visual"><div class="image-badge">PROTECCIÓN CONTRA INCENDIOS</div><div class="extinguisher-glow"></div><img src="assets/image3.jpeg" width="293" height="313" alt="Extintor de incendios"><div class="ext-visual-bottom"><svg class="icon"><use href="#icon-shield"/></svg><span>Equipos señalizados, vigentes y de fácil acceso.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section section-quiz" id="repaso" aria-labelledby="quiz-title">
+      <div class="container quiz-grid"><div class="quiz-intro"><div class="eyebrow light"><span class="red-dot"></span> 06 / AUTOEVALUACIÓN</div><h2 id="quiz-title">¿Qué tanto <em>aprendiste?</em></h2><p>Responde cinco preguntas y comprueba tus conocimientos.</p><div class="quiz-benefit"><svg class="icon"><use href="#icon-check"/></svg> 5 preguntas de opción múltiple</div><div class="quiz-benefit"><svg class="icon"><use href="#icon-check"/></svg> Resultados inmediatos</div><div class="quiz-benefit"><svg class="icon"><use href="#icon-check"/></svg> Puedes intentarlo otra vez</div><div class="quiz-deco" aria-hidden="true">?</div></div><div class="quiz-card"><div class="quiz-head"><span class="micro-label">COMPROBACIÓN DE CONOCIMIENTOS</span><span id="quiz-counter">PREGUNTA 01 / 05</span></div><div class="quiz-track"><span id="quiz-fill"></span></div><div id="quiz-area" aria-live="polite"></div></div></div>
+    </section>
+
+    <section class="institution-section" id="creditos"><div class="container institution-grid"><div class="institution-copy"><div class="eyebrow"><span class="red-dot"></span> MATERIAL ACADÉMICO</div><h2>Universidad Francisco de <span>Paula Santander.</span></h2><p>Programa de Ingeniería de Minas · Seguridad industrial y de minas · Cúcuta, 2026.</p><dl class="credits-list"><div><dt>Programa</dt><dd>Ingeniería de Minas</dd></div><div><dt>Asignatura</dt><dd>Seguridad industrial y de minas</dd></div><div><dt>Docente</dt><dd>German Mendez</dd></div><div><dt>Elaborado por</dt><dd>Jaider Villamizar — 1181757<br>Kevin Steven Meza Peñaranda — 1181883</dd></div><div><dt>Lugar y año</dt><dd>Cúcuta · 2026</dd></div></dl></div><div class="university-logos"><div class="logos-title">IDENTIDAD INSTITUCIONAL</div><div class="logo-display"><img src="assets/image2.jpeg" width="244" height="184" alt="Logo de la Universidad Francisco de Paula Santander"><img src="assets/image1.png" width="201" height="161" alt="Logo del Programa de Ingeniería de Minas UFPS"></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span class="footer-brand-square">UFPS</span><span><strong>Riesgos físico-químicos</strong><small>Prevención de incendios en minería · 2026</small></span></div><p>La prevención salva vidas. Siga siempre los procedimientos oficiales de seguridad y emergencia de su lugar de trabajo.</p><a href="#inicio" class="back-top">Volver arriba ↑</a></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
